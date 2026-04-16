@@ -1,6 +1,9 @@
 *odoo-data*
 postgresql/
 *data*
-.gitignore
+*gitignore*
 *.db
 *.pyc
+__pycache__/
+config/
+*.log
