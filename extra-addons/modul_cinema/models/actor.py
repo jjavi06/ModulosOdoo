@@ -9,6 +9,8 @@ class Actor(models.Model):
     cognom = fields.Char(string='Cognom', required=True)
     data_naixement = fields.Date(string='Data de Naixement')
     bibliografia = fields.Text(string='Bibliografia')
+    foto = fields.Image(string='Foto')
+    activo = fields.Boolean(string='Actiu', default=True)
     
     # Relacions
     pelicula_ids = fields.Many2many('cinema.pelicula', 'cinema_pelicula_actor_rel', 'actor_id', 'pelicula_id', string='Pel·lícules')

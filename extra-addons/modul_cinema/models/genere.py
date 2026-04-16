@@ -5,6 +5,8 @@ class Genere(models.Model):
     _description = 'Gènere Cinematogràfic'
 
     nom = fields.Char(string='Nom', required=True)
+    foto = fields.Image(string='Foto')
+    activo = fields.Boolean(string='Actiu', default=True)
     
     # Relacions
     pelicula_ids = fields.Many2many('cinema.pelicula', 'cinema_pelicula_genere_rel', 'genere_id', 'pelicula_id', string='Pel·lícules')

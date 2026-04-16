@@ -11,6 +11,8 @@ class Pelicula(models.Model):
     duracio = fields.Integer(string='Duració (minuts)')
     puntuacio = fields.Float(string='Puntuació', digits=(2, 1))
     resum = fields.Text(string='Resum')
+    foto = fields.Image(string='Foto')
+    activo = fields.Boolean(string='Actiu', default=True)
     
     # Relacions
     director_id = fields.Many2one('cinema.director', string='Director', ondelete='set null')

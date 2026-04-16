@@ -9,6 +9,8 @@ class Director(models.Model):
     cognom = fields.Char(string='Cognom', required=True)
     data_naixement = fields.Date(string='Data de Naixement')
     bibliografia = fields.Text(string='Bibliografia')
+    foto = fields.Image(string='Foto')
+    activo = fields.Boolean(string='Actiu', default=True)
     
     # Relacions
     pelicula_ids = fields.One2many('cinema.pelicula', 'director_id', string='Pel·lícules')
