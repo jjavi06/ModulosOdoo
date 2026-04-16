@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+
+        <!-- Accions que es poden executar -->
+        <record model="ir.actions.act_window" id="action_musica_canco">
+            <field name="name">Acció Canço</field>
+            <field name="res_model">musica.canco</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_musica_artista">
+            <field name="name">Acció Artista</field>
+            <field name="res_model">musica.artista</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- Menús del mòdul Música -->
+        <menuitem id="musica_menu_1" name="Música"/>
+        <menuitem id="musica_menu_2" name="Gestió Música" parent="musica_menu_1"/>
+        <menuitem id="musica_menu2_canco" name="Cançons" parent="musica_menu_2"
+            action="action_musica_canco"/>
+        <menuitem id="musica_menu_2_artista" name="Artistes" parent="musica_menu_2"
+            action="action_musica_artista"/>
+
+             <!-- vista en llista per Artista -->
+        <record model="ir.ui.view" id="view_musica_artista_list">
+            <field name="name">view_musica_artista_list</field>
+            <field name="model">musica.artista</field>
+            <field name="type">list</field>
+            <field name="arch" type="xml">
+                <list string="Artistes">
+                    <field name="nom"/>
+                    <field name="datanaix"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- vista en llista per Canco -->
+        <record model="ir.ui.view" id="view_musica_canco_list">
+            <field name="name">view_musica_canco_list</field>
+            <field name="model">musica.canco</field>
+            <field name="type">list</field>
+            <field name="arch" type="xml">
+                <list string="Cançons">
+                    <field name="titol"/>
+                    <field name="minuts"/>
+                    <field name="artista_id"/>
+                </list>
+            </field>
+        </record>
+    </data>
+</odoo>

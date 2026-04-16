@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_cinema_pelicula,access_cinema_pelicula,model_cinema_pelicula,base.group_user,1,1,1,1
+access_cinema_director,access_cinema_director,model_cinema_director,base.group_user,1,1,1,1
+access_cinema_actor,access_cinema_actor,model_cinema_actor,base.group_user,1,1,1,1
+access_cinema_genere,access_cinema_genere,model_cinema_genere,base.group_user,1,1,1,1
