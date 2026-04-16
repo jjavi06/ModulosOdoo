@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+
+        <!-- *** VISTES EN LLISTA - ACTOR *** -->
+        <record model="ir.ui.view" id="view_cinema_actor_list">
+            <field name="name">view_cinema_actor_list</field>
+            <field name="model">cinema.actor</field>
+            <field name="type">list</field>
+            <field name="arch" type="xml">
+                <list string="Actors">
+                    <field name="nom"/>
+                    <field name="cognom"/>
+                    <field name="edat"/>
+                    <field name="data_naixement"/>
+                </list>
+            </field>
+        </record>
+
+    </data>
+</odoo>

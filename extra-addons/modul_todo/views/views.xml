@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+
+        <!-- Accions -->
+        <record id="action_todo_tasca" model="ir.actions.act_window">
+            <field name="name">Tasques</field>
+            <field name="res_model">todo.tasca</field>
+            <field name="view_mode">list</field>
+        </record>
+
+        <!-- Menús -->
+        <menuitem id="menu_todo_root"
+                name="Todo"/>
+
+        <menuitem id="menu_todo_tasca"
+                name="Tasques"
+                parent="menu_todo_root"
+                action="action_todo_tasca"/>
+
+        <!-- Vista List -->
+        <record id="view_todo_tasca_list" model="ir.ui.view">
+            <field name="name">todo.tasca.list</field>
+            <field name="model">todo.tasca</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="titol"/>
+                    <field name="data_inici"/>
+                    <field name="data_final"/>
+                </list>
+            </field>
+        </record>
+
+    </data>
+</odoo>

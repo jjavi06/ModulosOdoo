@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_musica_artista,access_musica_artista,model_musica_artista,base.group_user,1,1,1,1
+access_musica_canco,access_musica_canco,model_musica_canco,base.group_user,1,1,1,1

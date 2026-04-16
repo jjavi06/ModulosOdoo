@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+
+        <!-- *** VISTES EN LLISTA - PELICULA *** -->
+        <record model="ir.ui.view" id="view_cinema_pelicula_list">
+            <field name="name">view_cinema_pelicula_list</field>
+            <field name="model">cinema.pelicula</field>
+            <field name="type">list</field>
+            <field name="arch" type="xml">
+                <list string="Pel·lícules">
+                    <field name="titol"/>
+                    <field name="director_id"/>
+                    <field name="any"/>
+                    <field name="antiguitat"/>
+                    <field name="puntuacio"/>
+                </list>
+            </field>
+        </record>
+
+    </data>
+</odoo>
