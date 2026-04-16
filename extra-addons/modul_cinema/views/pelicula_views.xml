@@ -17,6 +17,25 @@
             </field>
         </record>
 
+        <!-- *** VISTA SEARCH - PELICULA *** -->
+        <record model="ir.ui.view" id="view_cinema_pelicula_search">
+            <field name="name">view_cinema_pelicula_search</field>
+            <field name="model">cinema.pelicula</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Cerca de Pel·lícules">
+                    <field name="titol"/>
+                    <field name="director_id"/>
+                    <field name="any"/>
+                    <separator/>
+                    <filter name="molt_bones_9" string="Molt bones (+9 punts)" domain="[('puntuacio', '&gt;', 9)]"/>
+                    <filter name="molt_bones_8" string="Molt bones (+8 punts)" domain="[('puntuacio', '&gt;', 8)]"/>
+                    <filter name="bones_6" string="Bones (+6 punts)" domain="[('puntuacio', '&gt;', 6)]"/>
+                    <filter name="dolentes_5" string="Dolentes (-5 punts)" domain="[('puntuacio', '&lt;', 5)]"/>
+                </search>
+            </field>
+        </record>
+
         <!-- *** VISTA FORMULARI - PELICULA *** -->
         <record model="ir.ui.view" id="view_cinema_pelicula_form">
             <field name="name">view_cinema_pelicula_form</field>
