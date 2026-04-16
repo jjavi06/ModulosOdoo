@@ -17,6 +17,32 @@
             </field>
         </record>
 
+        <!-- *** VISTA KANBAN - PELICULA *** -->
+        <record model="ir.ui.view" id="view_cinema_pelicula_kanban">
+            <field name="name">view_cinema_pelicula_kanban</field>
+            <field name="model">cinema.pelicula</field>
+            <field name="type">kanban</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click o_kanban_record">
+                                <div class="o_kanban_image">
+                                    <field name="foto" widget="image" class="oe_avatar"/>
+                                </div>
+                                <div class="o_kanban_details">
+                                    <strong><field name="titol"/></strong>
+                                    <div><field name="director_id"/></div>
+                                    <div>Any: <field name="any"/></div>
+                                    <div>Puntuació: <field name="puntuacio"/></div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
         <!-- *** VISTA SEARCH - PELICULA *** -->
         <record model="ir.ui.view" id="view_cinema_pelicula_search">
             <field name="name">view_cinema_pelicula_search</field>

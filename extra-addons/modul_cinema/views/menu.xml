@@ -5,25 +5,25 @@
         <record model="ir.actions.act_window" id="action_cinema_pelicula">
             <field name="name">Pel·lícules</field>
             <field name="res_model">cinema.pelicula</field>
-            <field name="view_mode">list,form</field>
+            <field name="view_mode">kanban,list,form</field>
         </record>
 
         <record model="ir.actions.act_window" id="action_cinema_director">
             <field name="name">Directors</field>
             <field name="res_model">cinema.director</field>
-            <field name="view_mode">list,form</field>
+            <field name="view_mode">kanban,list,form</field>
         </record>
 
         <record model="ir.actions.act_window" id="action_cinema_actor">
             <field name="name">Actors</field>
             <field name="res_model">cinema.actor</field>
-            <field name="view_mode">list,form</field>
+            <field name="view_mode">kanban,list,form</field>
         </record>
 
         <record model="ir.actions.act_window" id="action_cinema_genere">
             <field name="name">Gèneres</field>
             <field name="res_model">cinema.genere</field>
-            <field name="view_mode">list,form</field>
+            <field name="view_mode">kanban,list,form</field>
         </record>
 
         <!-- *** MENUS - CINEMA *** -->

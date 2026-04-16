@@ -16,6 +16,31 @@
             </field>
         </record>
 
+        <!-- *** VISTA KANBAN - ACTOR *** -->
+        <record model="ir.ui.view" id="view_cinema_actor_kanban">
+            <field name="name">view_cinema_actor_kanban</field>
+            <field name="model">cinema.actor</field>
+            <field name="type">kanban</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click o_kanban_record">
+                                <div class="o_kanban_image">
+                                    <field name="foto" widget="image" class="oe_avatar"/>
+                                </div>
+                                <div class="o_kanban_details">
+                                    <strong><field name="nom"/> <field name="cognom"/></strong>
+                                    <div>Edat: <field name="edat"/></div>
+                                    <div>Data naixement: <field name="data_naixement"/></div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
         <!-- *** VISTA FORMULARI - ACTOR *** -->
         <record model="ir.ui.view" id="view_cinema_actor_form">
             <field name="name">view_cinema_actor_form</field>
