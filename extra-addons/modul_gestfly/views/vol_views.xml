@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <record id="view_gestfly_vol_list" model="ir.ui.view">
+            <field name="name">gestfly.vol.list</field>
+            <field name="model">gestfly.vol</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="codi"/>
+                    <field name="origen_id"/>
+                    <field name="desti_id"/>
+                    <field name="avio_id"/>
+                    <field name="passatgers"/>
+                    <field name="data_sortida"/>
+                    <field name="data_arrivada"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_gestfly_vol_form" model="ir.ui.view">
+            <field name="name">gestfly.vol.form</field>
+            <field name="model">gestfly.vol</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="codi"/>
+                            <field name="origen_id"/>
+                            <field name="desti_id"/>
+                            <field name="avio_id"/>
+                            <field name="passatgers"/>
+                            <field name="data_sortida"/>
+                            <field name="data_arrivada"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

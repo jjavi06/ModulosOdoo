@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+        <record id="view_gestfly_avio_list" model="ir.ui.view">
+            <field name="name">gestfly.avio.list</field>
+            <field name="model">gestfly.avio</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="codi"/>
+                    <field name="marca"/>
+                    <field name="model"/>
+                    <field name="max_vel"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_gestfly_avio_form" model="ir.ui.view">
+            <field name="name">gestfly.avio.form</field>
+            <field name="model">gestfly.avio</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="codi"/>
+                            <field name="imatge" widget="image"/>
+                            <field name="marca"/>
+                            <field name="model"/>
+                            <field name="max_vel"/>
+                        </group>
+                        <group string="Vols Assignats">
+                            <field name="vol_ids">
+                                <list editable="bottom">
+                                    <field name="codi"/>
+                                    <field name="origen_id"/>
+                                    <field name="desti_id"/>
+                                    <field name="data_sortida"/>
+                                    <field name="data_arrivada"/>
+                                    <field name="passatgers"/>
+                                </list>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

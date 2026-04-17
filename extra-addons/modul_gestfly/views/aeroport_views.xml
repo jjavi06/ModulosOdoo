@@ -1,0 +1,72 @@
+<odoo>
+    <data>
+        <record id="view_gestfly_aeroport_list" model="ir.ui.view">
+            <field name="name">gestfly.aeroport.list</field>
+            <field name="model">gestfly.aeroport</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="codi"/>
+                    <field name="nom"/>
+                    <field name="ciutat"/>
+                    <field name="pais"/>
+                    <field name="latitud"/>
+                    <field name="longitud"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_gestfly_aeroport_form" model="ir.ui.view">
+            <field name="name">gestfly.aeroport.form</field>
+            <field name="model">gestfly.aeroport</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="1">
+                            <div style="width:100%; text-align:center;">
+                                <field name="imatge" string="Foto aeroport" widget="image" nolabel="1" options="{'size': [1200, 450]}" style="display:inline-block; width:80%; margin:0 auto;"/>
+                            </div>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="codi"/>
+                                <field name="nom"/>
+                                <field name="ciutat"/>
+                            </group>
+                            <group>
+                                <field name="pais"/>
+                                <field name="latitud"/>
+                                <field name="longitud"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Sortides">
+                                <field name="vol_origen_ids">
+                                    <list editable="bottom">
+                                        <field name="codi"/>
+                                        <field name="passatgers"/>
+                                        <field name="data_sortida"/>
+                                        <field name="data_arrivada"/>
+                                        <field name="desti_id"/>
+                                        <field name="avio_id"/>
+                                    </list>
+                                </field>
+                            </page>
+                            <page string="Arribades">
+                                <field name="vol_desti_ids">
+                                    <list editable="bottom">
+                                        <field name="codi"/>
+                                        <field name="passatgers"/>
+                                        <field name="data_sortida"/>
+                                        <field name="data_arrivada"/>
+                                        <field name="origen_id"/>
+                                        <field name="avio_id"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

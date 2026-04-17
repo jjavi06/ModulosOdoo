@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_gestfly_aeroport,access_gestfly_aeroport,model_gestfly_aeroport,base.group_user,1,1,1,1
+access_gestfly_avio,access_gestfly_avio,model_gestfly_avio,base.group_user,1,1,1,1
+access_gestfly_vol,access_gestfly_vol,model_gestfly_vol,base.group_user,1,1,1,1

@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="action_gestfly_aeroport">
+            <field name="name">Aeroports</field>
+            <field name="res_model">gestfly.aeroport</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_gestfly_avio">
+            <field name="name">Avions</field>
+            <field name="res_model">gestfly.avio</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_gestfly_vol">
+            <field name="name">Vols</field>
+            <field name="res_model">gestfly.vol</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <menuitem id="gestfly_menu_root" name="Gestfly"/>
+        <menuitem id="gestfly_menu_management" name="Gestio Vols" parent="gestfly_menu_root"/>
+
+        <menuitem id="gestfly_menu_aeroport" name="Aeroports" parent="gestfly_menu_management" action="action_gestfly_aeroport"/>
+        <menuitem id="gestfly_menu_avio" name="Avions" parent="gestfly_menu_management" action="action_gestfly_avio"/>
+        <menuitem id="gestfly_menu_vol" name="Vols" parent="gestfly_menu_management" action="action_gestfly_vol"/>
+    </data>
+</odoo>
