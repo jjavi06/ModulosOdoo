@@ -1,0 +1,147 @@
+<odoo>
+    <data noupdate="1">
+        <record id="demo_aeroport_bcn" model="gestfly.aeroport">
+            <field name="codi">1001</field>
+            <field name="nom">Aeroport Barcelona El Prat</field>
+            <field name="imatge" type="base64" file="modul_gestfly/static/src/img/aeroport_n1.png"/>
+            <field name="ciutat">Barcelona</field>
+            <field name="pais">Espanya</field>
+            <field name="latitud">41.2974</field>
+            <field name="longitud">2.0833</field>
+        </record>
+
+        <record id="demo_aeroport_mad" model="gestfly.aeroport">
+            <field name="codi">1002</field>
+            <field name="nom">Aeroport Adolfo Suarez Madrid-Barajas</field>
+            <field name="imatge" type="base64" file="modul_gestfly/static/src/img/aeroport_n2.png"/>
+            <field name="ciutat">Madrid</field>
+            <field name="pais">Espanya</field>
+            <field name="latitud">40.4983</field>
+            <field name="longitud">-3.5676</field>
+        </record>
+
+        <record id="demo_avio_1" model="gestfly.avio">
+            <field name="codi">2001</field>
+            <field name="imatge" type="base64" file="modul_gestfly/static/src/img/avio_n1.png"/>
+            <field name="marca">101</field>
+            <field name="model">A320</field>
+            <field name="max_vel">871.0</field>
+        </record>
+
+        <record id="demo_avio_2" model="gestfly.avio">
+            <field name="codi">2002</field>
+            <field name="imatge" type="base64" file="modul_gestfly/static/src/img/avio_n2.png"/>
+            <field name="marca">102</field>
+            <field name="model">B737</field>
+            <field name="max_vel">876.0</field>
+        </record>
+
+        <record id="demo_avio_3" model="gestfly.avio">
+            <field name="codi">2003</field>
+            <field name="imatge" type="base64" file="modul_gestfly/static/src/img/avio_n3.png"/>
+            <field name="marca">103</field>
+            <field name="model">E195</field>
+            <field name="max_vel">870.0</field>
+        </record>
+
+        <record id="demo_vol_01" model="gestfly.vol">
+            <field name="codi">3001</field>
+            <field name="passatgers">145</field>
+            <field name="data_sortida">2026-05-01</field>
+            <field name="data_arrivada">2026-05-01</field>
+            <field name="origen_id" ref="demo_aeroport_bcn"/>
+            <field name="desti_id" ref="demo_aeroport_mad"/>
+            <field name="avio_id" ref="demo_avio_1"/>
+        </record>
+
+        <record id="demo_vol_02" model="gestfly.vol">
+            <field name="codi">3002</field>
+            <field name="passatgers">162</field>
+            <field name="data_sortida">2026-05-02</field>
+            <field name="data_arrivada">2026-05-02</field>
+            <field name="origen_id" ref="demo_aeroport_mad"/>
+            <field name="desti_id" ref="demo_aeroport_bcn"/>
+            <field name="avio_id" ref="demo_avio_2"/>
+        </record>
+
+        <record id="demo_vol_03" model="gestfly.vol">
+            <field name="codi">3003</field>
+            <field name="passatgers">98</field>
+            <field name="data_sortida">2026-05-03</field>
+            <field name="data_arrivada">2026-05-03</field>
+            <field name="origen_id" ref="demo_aeroport_bcn"/>
+            <field name="desti_id" ref="demo_aeroport_mad"/>
+            <field name="avio_id" ref="demo_avio_3"/>
+        </record>
+
+        <record id="demo_vol_04" model="gestfly.vol">
+            <field name="codi">3004</field>
+            <field name="passatgers">121</field>
+            <field name="data_sortida">2026-05-04</field>
+            <field name="data_arrivada">2026-05-04</field>
+            <field name="origen_id" ref="demo_aeroport_mad"/>
+            <field name="desti_id" ref="demo_aeroport_bcn"/>
+            <field name="avio_id" ref="demo_avio_1"/>
+        </record>
+
+        <record id="demo_vol_05" model="gestfly.vol">
+            <field name="codi">3005</field>
+            <field name="passatgers">157</field>
+            <field name="data_sortida">2026-05-05</field>
+            <field name="data_arrivada">2026-05-05</field>
+            <field name="origen_id" ref="demo_aeroport_bcn"/>
+            <field name="desti_id" ref="demo_aeroport_mad"/>
+            <field name="avio_id" ref="demo_avio_2"/>
+        </record>
+
+        <record id="demo_vol_06" model="gestfly.vol">
+            <field name="codi">3006</field>
+            <field name="passatgers">134</field>
+            <field name="data_sortida">2026-05-06</field>
+            <field name="data_arrivada">2026-05-06</field>
+            <field name="origen_id" ref="demo_aeroport_mad"/>
+            <field name="desti_id" ref="demo_aeroport_bcn"/>
+            <field name="avio_id" ref="demo_avio_3"/>
+        </record>
+
+        <record id="demo_vol_07" model="gestfly.vol">
+            <field name="codi">3007</field>
+            <field name="passatgers">149</field>
+            <field name="data_sortida">2026-05-07</field>
+            <field name="data_arrivada">2026-05-07</field>
+            <field name="origen_id" ref="demo_aeroport_bcn"/>
+            <field name="desti_id" ref="demo_aeroport_mad"/>
+            <field name="avio_id" ref="demo_avio_1"/>
+        </record>
+
+        <record id="demo_vol_08" model="gestfly.vol">
+            <field name="codi">3008</field>
+            <field name="passatgers">111</field>
+            <field name="data_sortida">2026-05-08</field>
+            <field name="data_arrivada">2026-05-08</field>
+            <field name="origen_id" ref="demo_aeroport_mad"/>
+            <field name="desti_id" ref="demo_aeroport_bcn"/>
+            <field name="avio_id" ref="demo_avio_2"/>
+        </record>
+
+        <record id="demo_vol_09" model="gestfly.vol">
+            <field name="codi">3009</field>
+            <field name="passatgers">169</field>
+            <field name="data_sortida">2026-05-09</field>
+            <field name="data_arrivada">2026-05-09</field>
+            <field name="origen_id" ref="demo_aeroport_bcn"/>
+            <field name="desti_id" ref="demo_aeroport_mad"/>
+            <field name="avio_id" ref="demo_avio_3"/>
+        </record>
+
+        <record id="demo_vol_10" model="gestfly.vol">
+            <field name="codi">3010</field>
+            <field name="passatgers">126</field>
+            <field name="data_sortida">2026-05-10</field>
+            <field name="data_arrivada">2026-05-10</field>
+            <field name="origen_id" ref="demo_aeroport_mad"/>
+            <field name="desti_id" ref="demo_aeroport_bcn"/>
+            <field name="avio_id" ref="demo_avio_1"/>
+        </record>
+    </data>
+</odoo>

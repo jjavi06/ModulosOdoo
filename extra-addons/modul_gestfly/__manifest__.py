@@ -9,6 +9,7 @@
         'views/aeroport_views.xml',
         'views/avio_views.xml',
         'views/vol_views.xml',
+        'demo/demo.xml',
     ],
     'installable': True,
     'application': True,
