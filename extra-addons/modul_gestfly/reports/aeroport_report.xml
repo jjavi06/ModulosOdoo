@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+        <record id="action_report_gestfly_aeroport" model="ir.actions.report">
+            <field name="name">Informe Aeroport</field>
+            <field name="model">gestfly.aeroport</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">modul_gestfly.report_gestfly_aeroport</field>
+            <field name="report_file">modul_gestfly.report_gestfly_aeroport</field>
+            <field name="binding_model_id" ref="model_gestfly_aeroport"/>
+            <field name="binding_type">report</field>
+            <field name="print_report_name">'Aeroport - %s' % (object.nom or '')</field>
+        </record>
+
+        <template id="report_gestfly_aeroport">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>Informe Aeroport</h2>
+                            <table class="table table-sm o_main_table">
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 35%;">Codi</th>
+                                        <td><span t-field="o.codi"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nom</th>
+                                        <td><span t-field="o.nom"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ciutat</th>
+                                        <td><span t-field="o.ciutat"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pais</th>
+                                        <td><span t-field="o.pais"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Latitud</th>
+                                        <td><span t-field="o.latitud"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Longitud</th>
+                                        <td><span t-field="o.longitud"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

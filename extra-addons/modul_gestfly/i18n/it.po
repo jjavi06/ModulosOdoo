@@ -202,3 +202,14 @@ msgstr "Marca: "
 #: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_avio_kanban
 msgid "Max Vel: "
 msgstr "Vel Max: "
+
+#. module: modul_gestfly
+#: model:ir.actions.report,name:modul_gestfly.action_report_gestfly_aeroport
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.report_gestfly_aeroport
+msgid "Informe Aeroport"
+msgstr "Rapporto Aeroporto"
+
+#. module: modul_gestfly
+#: model:ir.actions.report,print_report_name:modul_gestfly.action_report_gestfly_aeroport
+msgid "Aeroport - %s"
+msgstr "Aeroporto - %s"
