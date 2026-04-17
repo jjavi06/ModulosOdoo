@@ -68,5 +68,48 @@
                 </form>
             </field>
         </record>
+
+        <record id="view_gestfly_aeroport_kanban" model="ir.ui.view">
+            <field name="name">gestfly.aeroport.kanban</field>
+            <field name="model">gestfly.aeroport</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="imatge"/>
+                    <field name="codi"/>
+                    <field name="nom"/>
+                    <field name="ciutat"/>
+                    <field name="pais"/>
+                    <field name="latitud"/>
+                    <field name="longitud"/>
+                    <templates>
+                        <t t-name="card">
+                            <div class="o_kanban_card">
+                                <div class="o_kanban_image">
+                                    <field name="imatge" widget="image"/>
+                                </div>
+                                <div class="o_kanban_details">
+                                    <strong>
+                                        <field name="nom"/>
+                                    </strong>
+                                    <div>
+                                        <span>Codi: </span>
+                                        <field name="codi"/>
+                                    </div>
+                                    <div>
+                                        <field name="ciutat"/>, <field name="pais"/>
+                                    </div>
+                                    <div>
+                                        <span>Lat: </span>
+                                        <field name="latitud"/>
+                                        <span> | Lon: </span>
+                                        <field name="longitud"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
     </data>
 </odoo>

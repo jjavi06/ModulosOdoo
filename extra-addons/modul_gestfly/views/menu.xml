@@ -3,13 +3,13 @@
         <record model="ir.actions.act_window" id="action_gestfly_aeroport">
             <field name="name">Aeroports</field>
             <field name="res_model">gestfly.aeroport</field>
-            <field name="view_mode">list,form</field>
+            <field name="view_mode">kanban,list,form</field>
         </record>
 
         <record model="ir.actions.act_window" id="action_gestfly_avio">
             <field name="name">Avions</field>
             <field name="res_model">gestfly.avio</field>
-            <field name="view_mode">list,form</field>
+            <field name="view_mode">kanban,list,form</field>
         </record>
 
         <record model="ir.actions.act_window" id="action_gestfly_vol">
