@@ -1,0 +1,204 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#  * modul_gestfly
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-17 00:00+0000\n"
+"PO-Revision-Date: 2026-04-17 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: modul_gestfly
+#: model:ir.model,name:modul_gestfly.model_gestfly_aeroport
+msgid "Aeroport"
+msgstr "Aeroporto"
+
+#. module: modul_gestfly
+#: model:ir.model,name:modul_gestfly.model_gestfly_avio
+msgid "Avio"
+msgstr "Aereo"
+
+#. module: modul_gestfly
+#: model:ir.model,name:modul_gestfly.model_gestfly_vol
+msgid "Vol"
+msgstr "Volo"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__codi
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_avio__codi
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_vol__codi
+msgid "Codi"
+msgstr "Fonte"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__nom
+msgid "Nom"
+msgstr "Nome"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__imatge
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_avio__imatge
+msgid "Imatge"
+msgstr "Immagine"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__ciutat
+msgid "Ciutat"
+msgstr "Città"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__pais
+msgid "Pais"
+msgstr "Paese"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__latitud
+msgid "Latitud"
+msgstr "Latitudine"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__longitud
+msgid "Longitud"
+msgstr "Longitudine"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__vol_origen_ids
+msgid "Vols Origen"
+msgstr "Voli in partenza"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_aeroport__vol_desti_ids
+msgid "Vols Desti"
+msgstr "Voli in arrivo"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_avio__marca
+msgid "Marca"
+msgstr "Marca"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_avio__model
+msgid "Model"
+msgstr "Modello"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_avio__max_vel
+msgid "Max Vel"
+msgstr "Velocità Max"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_avio__vol_ids
+msgid "Vols"
+msgstr "Voli"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_vol__passatgers
+msgid "Passatgers"
+msgstr "Passeggeri"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_vol__data_sortida
+msgid "Data Sortida"
+msgstr "Data Partenza"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_vol__data_arrivada
+msgid "Data Arrivada"
+msgstr "Data Arrivo"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_vol__origen_id
+msgid "Origen"
+msgstr "Origine"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_vol__desti_id
+msgid "Desti"
+msgstr "Destinazione"
+
+#. module: modul_gestfly
+#: model:ir.model.fields,field_description:modul_gestfly.field_gestfly_vol__avio_id
+msgid "Avio"
+msgstr "Aereo"
+
+#. module: modul_gestfly
+#: model:ir.ui.menu,name:modul_gestfly.gestfly_menu_root
+msgid "Gestfly"
+msgstr "Gestfly"
+
+#. module: modul_gestfly
+#: model:ir.ui.menu,name:modul_gestfly.gestfly_menu_management
+msgid "Gestio Vols"
+msgstr "Gestione Voli"
+
+#. module: modul_gestfly
+#: model:ir.actions.act_window,name:modul_gestfly.action_gestfly_aeroport
+#: model:ir.ui.menu,name:modul_gestfly.gestfly_menu_aeroport
+msgid "Aeroports"
+msgstr "Aeroporti"
+
+#. module: modul_gestfly
+#: model:ir.actions.act_window,name:modul_gestfly.action_gestfly_avio
+#: model:ir.ui.menu,name:modul_gestfly.gestfly_menu_avio
+msgid "Avions"
+msgstr "Aerei"
+
+#. module: modul_gestfly
+#: model:ir.actions.act_window,name:modul_gestfly.action_gestfly_vol
+#: model:ir.ui.menu,name:modul_gestfly.gestfly_menu_vol
+msgid "Vols"
+msgstr "Voli"
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_aeroport_form
+msgid "Foto aeroport"
+msgstr "Foto aeroporto"
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_aeroport_form
+msgid "Sortides"
+msgstr "Partenze"
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_aeroport_form
+msgid "Arribades"
+msgstr "Arrivi"
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_aeroport_kanban
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_avio_kanban
+msgid "Codi: "
+msgstr "Fonte: "
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_aeroport_kanban
+msgid "Lat: "
+msgstr "Lat: "
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_aeroport_kanban
+msgid " | Lon: "
+msgstr " | Lon: "
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_avio_form
+msgid "Vols Assignats"
+msgstr "Voli Assegnati"
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_avio_kanban
+msgid "Marca: "
+msgstr "Marca: "
+
+#. module: modul_gestfly
+#: model_terms:ir.ui.view,arch_db:modul_gestfly.view_gestfly_avio_kanban
+msgid "Max Vel: "
+msgstr "Vel Max: "
