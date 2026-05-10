@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_incidencia_tipus_tic,incidencia.tipus tic,model_incidencia_tipus,incidencies_core.group_incidencies_tic,1,1,1,1
+access_incidencia_ubicacio_tic,incidencia.ubicacio tic,model_incidencia_ubicacio,incidencies_core.group_incidencies_tic,1,1,1,1
+access_incidencia_ticket_tic,incidencia.ticket tic,model_incidencia_ticket,incidencies_core.group_incidencies_tic,1,1,1,1

@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        <record id="view_incidencia_ubicacio_list" model="ir.ui.view">
+            <field name="name">incidencia.ubicacio.list</field>
+            <field name="model">incidencia.ubicacio</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_incidencia_ubicacio_form" model="ir.ui.view">
+            <field name="name">incidencia.ubicacio.form</field>
+            <field name="model">incidencia.ubicacio</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_incidencia_ubicacio" model="ir.actions.act_window">
+            <field name="name">Ubicacions</field>
+            <field name="res_model">incidencia.ubicacio</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

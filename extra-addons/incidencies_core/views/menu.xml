@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <menuitem id="incidencies_core_menu_root" name="Incidencies" groups="incidencies_core.group_incidencies_tic"/>
+
+        <menuitem id="incidencies_core_menu_tickets" name="Tickets" parent="incidencies_core_menu_root"
+            action="action_incidencia_ticket" sequence="10" groups="incidencies_core.group_incidencies_tic"/>
+
+        <menuitem id="incidencies_core_menu_config" name="Configuracio" parent="incidencies_core_menu_root"
+            sequence="20" groups="incidencies_core.group_incidencies_tic"/>
+
+        <menuitem id="incidencies_core_menu_tipus" name="Tipus" parent="incidencies_core_menu_config"
+            action="action_incidencia_tipus" sequence="10" groups="incidencies_core.group_incidencies_tic"/>
+
+        <menuitem id="incidencies_core_menu_ubicacions" name="Ubicacions" parent="incidencies_core_menu_config"
+            action="action_incidencia_ubicacio" sequence="20" groups="incidencies_core.group_incidencies_tic"/>
+    </data>
+</odoo>

@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <record id="group_incidencies_client" model="res.groups">
+            <field name="name">Incidencies Client</field>
+        </record>
+
+        <record id="rule_incidencies_ticket_client_own" model="ir.rule">
+            <field name="name">Incidencies client: nomes propies</field>
+            <field name="model_id" ref="incidencies_core.model_incidencia_ticket"/>
+            <field name="groups" eval="[(4, ref('incidencies_users.group_incidencies_client'))]"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="0"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="0"/>
+        </record>
+    </data>
+</odoo>

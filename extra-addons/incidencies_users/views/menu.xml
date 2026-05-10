@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <menuitem id="incidencies_users_menu_root" name="Incidencies Client"
+            groups="incidencies_users.group_incidencies_client"/>
+
+        <menuitem id="incidencies_users_menu_tickets" name="Les Meves Incidencies"
+            parent="incidencies_users_menu_root" action="action_incidencies_client_ticket"
+            groups="incidencies_users.group_incidencies_client" sequence="10"/>
+    </data>
+</odoo>

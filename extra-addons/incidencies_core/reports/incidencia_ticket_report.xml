@@ -1,0 +1,58 @@
+<odoo>
+    <data>
+        <record id="action_report_incidencia_ticket" model="ir.actions.report">
+            <field name="name">Informe Incidencia</field>
+            <field name="model">incidencia.ticket</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">incidencies_core.report_incidencia_ticket_document</field>
+            <field name="report_file">incidencies_core.report_incidencia_ticket_document</field>
+            <field name="binding_model_id" ref="model_incidencia_ticket"/>
+            <field name="binding_type">report</field>
+            <field name="print_report_name">'Incidencia - %s' % (object.asunto or '')</field>
+        </record>
+
+        <template id="report_incidencia_ticket_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>Informe d'Incidencia</h2>
+                            <table class="table table-sm o_main_table">
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 30%;">Asunto</th>
+                                        <td><span t-field="o.asunto"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tipus</th>
+                                        <td><span t-field="o.tipus_id"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ubicacio</th>
+                                        <td><span t-field="o.aula_id"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Solicitant</th>
+                                        <td><span t-field="o.user_id"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Estat</th>
+                                        <td><span t-field="o.state"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Missatge</th>
+                                        <td><span t-field="o.mensaje"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Comentaris tecnics</th>
+                                        <td><span t-field="o.comentarios_tecnicos"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        <record id="view_incidencia_tipus_list" model="ir.ui.view">
+            <field name="name">incidencia.tipus.list</field>
+            <field name="model">incidencia.tipus</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_incidencia_tipus_form" model="ir.ui.view">
+            <field name="name">incidencia.tipus.form</field>
+            <field name="model">incidencia.tipus</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_incidencia_tipus" model="ir.actions.act_window">
+            <field name="name">Tipus</field>
+            <field name="res_model">incidencia.tipus</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

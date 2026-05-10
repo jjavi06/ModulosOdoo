@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <record id="group_incidencies_tic" model="res.groups">
+            <field name="name">Incidencies TIC</field>
+        </record>
+    </data>
+</odoo>
