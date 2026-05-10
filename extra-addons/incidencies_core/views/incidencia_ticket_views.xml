@@ -36,15 +36,18 @@
         <record id="view_incidencia_ticket_form" model="ir.ui.view">
             <field name="name">incidencia.ticket.form</field>
             <field name="model">incidencia.ticket</field>
+            <field name="groups_id" eval="[(4, ref('incidencies_core.group_incidencies_tic'))]"/>
             <field name="arch" type="xml">
                 <form edit="1">
+                    <header>
+                        <field name="state" widget="statusbar" clickable="1" statusbar_visible="rebuda,en_proces,resolta,tancada" options="{'clickable': True}"/>
+                    </header>
                     <sheet>
                         <group>
                             <field name="asunto"/>
                             <field name="tipus_id"/>
                             <field name="aula_id"/>
                             <field name="user_id"/>
-                            <field name="state"/>
                         </group>
                         <notebook>
                             <page string="Descripcio">
@@ -67,6 +70,19 @@
             <field name="name">Incidencies</field>
             <field name="res_model">incidencia.ticket</field>
             <field name="view_mode">list,form</field>
+
+            <field name="view_ids" eval="[
+                (5, 0, 0),
+                (0, 0, {
+                    'view_mode': 'list',
+                    'view_id': ref('view_incidencia_ticket_list')
+                }),
+                (0, 0, {
+                    'view_mode': 'form',
+                    'view_id': ref('view_incidencia_ticket_form')
+                })
+            ]"/>
+
             <field name="search_view_id" ref="view_incidencia_ticket_search"/>
         </record>
     </data>
